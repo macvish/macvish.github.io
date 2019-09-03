@@ -1,9 +1,9 @@
 p, td, th{
-    font-size: 1em
+    font-size: 16px;
 }
 .container{
     position: relative;
-    margin: 5% 20%;
+    margin: 5% 15%;
     padding: 5% 5%;
     background-color: rgba(255, 255, 235, 0.808);
 }
@@ -17,7 +17,7 @@ p, td, th{
     text-align: justify;
 }
 .box{
-    width: 500px;
+    width: 600px;
 }
 .left{
     text-align: left;
@@ -35,7 +35,11 @@ hr{
     display: inline-block;
 }
 .col{
-    display: inline-block;
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
     margin-left: 10%;
 }
 input, textarea{
@@ -48,11 +52,14 @@ input, textarea{
     margin-top: 6px;
 }
 #invalid{
-    float: right;
+    /* float: right;
     width: 400px;
     line-height: 20px;
-    text-align: center;
+    text-align: center; */
     color: red;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 50%
 }
 #message{
     height: 100px;
@@ -65,4 +72,46 @@ input, textarea{
 }
 #btn:hover{
     background-color: rgba(46, 144, 49, 0.835);
+}
+@media screen and (max-width: 800px) and (min-width: 300px){
+    .container{
+        position: relative;
+        margin: 5% 3%;
+        padding: 5% 3%;
+        background-color: rgba(255, 255, 235, 0.808);
+    }
+    .col{
+        display: flex;
+        flex: 3;
+        justify-content: space-around;
+        align-content: center;
+    }
+    h2{
+        font-size: 100%;
+    }
+    h4{
+        font-size: 70%; 
+    }
+    p, td, th{
+        font-size: 90%;
+    }
+    .box{
+        width: 400px;
+    }
+    input, textarea{
+        display: block;
+        width: 200px;
+        padding: 9px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+    }
+    img{
+        width: 150px;
+    }
+    #invalid{
+        line-height: 1.5;
+        color: red;
+    }
 }
