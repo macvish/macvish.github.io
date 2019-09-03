@@ -6,8 +6,7 @@ const init = () => {
     let mgs = document.querySelector('#mgs')
     mgs.addEventListener('invalid', validateMgs)
 }
-const validate = () => {
-}
+
 const validateName = (event) => {
     let par = document.querySelector('#info')
     if ( ! event.target.validity.valid ) {
@@ -15,6 +14,7 @@ const validateName = (event) => {
         par.style.display = 'block'
     }
 }
+
 const validateEmail = (event) => {
     let par = document.querySelector('#info1')
     if ( ! event.target.validity.valid ) {
@@ -22,10 +22,15 @@ const validateEmail = (event) => {
         par.style.display = 'block'
     }
 }
+
 const validateMgs = (event) => {
     let par = document.querySelector('#info2')
     if ( ! event.target.validity.valid ) {
         par.innerHTML = '* Message field should have at least 20 characters'
         par.style.display = 'block'
     }
+}
+
+const validate = () => {
+
 }
