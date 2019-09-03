@@ -142,18 +142,18 @@
             <P>Playing Games, Surfing the Internet, Reading and Listening to music.</P>
             <br/><br/>
             <div class="col">
-                <img src="https://res.cloudinary.com/macovish/image/upload/c_scale,r_23,w_627/a_0/v1566536087/My%20pictures/20150101_135213_jkeycg.jpg" width="150px">
-            </div>
-            <div class="col">
+                <div id="img">
+                    <img src="https://res.cloudinary.com/macovish/image/upload/c_scale,r_23,w_627/a_0/v1566536087/My%20pictures/20150101_135213_jkeycg.jpg" width="150px">
+                </div>
                 <form>
-                    <input type="text" id="name" placeholder="Name" pattern="[A-Za-z]{4,}" required>
+                    <input type="text" id="name" placeholder="Name" pattern="[A-Za-z][A-Za-z ]{3,}" required>
                     <input type="email" id="email" placeholder="Email" required>
-                    <input type="text" id="title" placeholder="Title" pattern="[A-Za-z]{4,}" required>
-                    <textarea type="text" id="mgs" placeholder="Message" pattern="[A-Za-z]{20,}" required></textarea>
+                    <input type="text" id="title" placeholder="Title" pattern="[A-Za-z][A-Za-z ]{3,}">
+                    <textarea type="text" id="mgs" placeholder="Message" minlength="20" required></textarea>
                     <input type="submit" id="btn" value="Send" onclick="validate()">
                 </form>
             </div>
-            <div id="invalid">
+            <div class="col" id="invalid">
                 <i id="info"></i>
                 <i id="info1"></i>
                 <i id="info2"></i>
