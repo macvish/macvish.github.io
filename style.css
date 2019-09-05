@@ -35,6 +35,17 @@ hr{
     color: #547EC9;
     font-family: 'Courier New', Courier, monospace;
 }
+/* #trow{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+#trow > p{
+    flex: 3;
+}
+#trow > p:nth-child(2){
+    flex: 1;
+} */
 .row{
     display: inline-block;
 }
@@ -63,7 +74,7 @@ input, textarea{
     color: red;
     text-align: center;
     flex-direction: column;
-    margin-left: 50%
+    margin-left: 50%;
 }
 #message{
     height: 100px;
@@ -77,15 +88,15 @@ input, textarea{
 #btn:hover{
     background-color: rgba(46, 144, 49, 0.835);
 }
-@media screen and (max-width: 800px) and (min-width: 300px){
+@media only screen and (min-width: 300px) and (max-width: 800px){
     .container{
         position: relative;
         margin: 5% 3%;
         padding: 5% 3%;
         background-color: rgba(255, 255, 235, 0.808);
     }
-        .header > h2{
-       font-size: 1em;
+    .header > h2{
+       font-size: 1rem;
     }
     .header > h4{
         font-size: 0.8em;
@@ -99,12 +110,7 @@ input, textarea{
         justify-content: space-around;
         align-content: center;
     }
-/*     h2{
-        font-size: 100%;
-    }
-    h4{
-        font-size: 70%; 
-    } */
+    
     p, td, th{
         font-size: 90%;
     }
@@ -150,11 +156,14 @@ input, textarea{
      }
     .col{
         display: flex;
-        justify-content: space-around;
-        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
     .col > #img{
         flex: 2;
+        margin-bottom: 20px;
     }
     .col > form{
         flex: 3;
@@ -173,26 +182,28 @@ input, textarea{
     }
     input, textarea{
         display: block;
-        width: 400px;
-        padding: 9px;
+        width: 600px;
+        font-size: 30px;
+        padding: 5px;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
-        margin-top: 6px;
+        margin-top: 8px;
     }
     input{
-        height: 60px;
+        height: 70px;
     }
     textarea{
-        height: 100px;
+        height: 150px;
     }
     #btn{
         height: auto;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     img{
-        display: block;
         width: 150px;
-        margin: auto;
     }
     #invalid{
         line-height: 1.5;
