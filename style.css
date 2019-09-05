@@ -203,10 +203,11 @@ input, textarea{
         margin-right: auto;
     }
     img{
-        width: 150px;
+        width: 250px;
     }
     #invalid{
         line-height: 1.5;
         color: red;
+        margin-left: 0;
     }
 }
