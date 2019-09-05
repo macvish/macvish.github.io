@@ -57,6 +57,12 @@ hr{
     align-content: space-between;
     margin-left: 10%;
 }
+img{
+    margin-top: 30%;
+}
+form > h1{
+    margin-top: 0;
+}
 input, textarea{
     display: block;
     width: 300px;
