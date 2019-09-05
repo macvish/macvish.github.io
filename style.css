@@ -150,11 +150,15 @@ input, textarea{
      }
     .col{
         display: flex;
-        flex: 3;
         justify-content: space-around;
         align-content: center;
     }
-    
+    .col > #img{
+        flex: 2;
+    }
+    .col > form{
+        flex: 3;
+    }
     p{
         font-size: 14px;
     }
@@ -169,15 +173,26 @@ input, textarea{
     }
     input, textarea{
         display: block;
-        width: 200px;
+        width: 400px;
         padding: 9px;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
     }
+    input{
+        height: 60px;
+    }
+    textarea{
+        height: 100px;
+    }
+    #btn{
+        height: auto;
+    }
     img{
+        display: block;
         width: 150px;
+        margin: auto;
     }
     #invalid{
         line-height: 1.5;
