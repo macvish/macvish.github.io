@@ -84,18 +84,27 @@ input, textarea{
         padding: 5% 3%;
         background-color: rgba(255, 255, 235, 0.808);
     }
+        .header > h2{
+       font-size: 1em;
+    }
+    .header > h4{
+        font-size: 0.8em;
+     }
+     .header > h5{
+        font-size: 0.3;
+     }
     .col{
         display: flex;
         flex: 3;
         justify-content: space-around;
         align-content: center;
     }
-    h2{
+/*     h2{
         font-size: 100%;
     }
     h4{
         font-size: 70%; 
-    }
+    } */
     p, td, th{
         font-size: 90%;
     }
